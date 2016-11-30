@@ -2,6 +2,7 @@
 """clear_uplaods.py
 
 This module's name is 'clear_uplaods'.
+This module will remove all contents in a specific directory.
 
 """
 import shutil

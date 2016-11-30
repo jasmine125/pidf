@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""run_img.py
+"""capture.py
 
 This module's name is 'capture'.
+This module will capture using Picamera & upload a captured pic to Dropbox.
 
 """
 from picamera import PiCamera

@@ -2,6 +2,7 @@
 """record.py
 
 This module's name is 'record'.
+This module will record using Picamera & upload a recorded video to Dropbox.
 
 """
 from picamera import PiCamera
