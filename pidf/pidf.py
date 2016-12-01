@@ -68,11 +68,14 @@ def process(message='', d=None):
 @app.route('/'+constant.CONST_CMD_WEBHOOKS, methods=['GET', 'POST'])
 def webhooks():
     ret = process(constant.CONST_CMD_WEBHOOKS)
-    try:
-        print('challenge = ',  request.args.get('challenge'))
-        ret = request.args.get('challenge')
-    except:
-        pass
+
+    if 'challenge' in request.args:
+        try:
+            
+            print('challenge = ',  request.args.get('challenge'))
+            ret = request.args.get('challenge')
+        except:
+            pass
 
     return ret
 
