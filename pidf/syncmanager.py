@@ -49,7 +49,10 @@ class SyncMananger(object):
             dropbox_path (str): The directory path in a dropbox
             local_path (str): The directory path in a local storage
 
+        Returns:
+            isChanged (boolean): If it has changed items, this api will return True.
         """
+        isChanged = False
         local = self._get_files_dict(local_path)
         online = self._get_files_dict('/' + dropbox_path, isonline=True)
 
@@ -79,10 +82,15 @@ class SyncMananger(object):
 
             except KeyError:
                 pass
-
+    
         #The reminder of local will be deleted.
         self._remove_files(local)
         print('*** downloads is complete.')
+
+        if len(downloaded_files) > 0 or len(local) > 0:
+            isChanged = True
+
+        return isChanged
 
 
     def _is_same(self, dropbox_metadata, local_file_name):
