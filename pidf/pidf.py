@@ -87,4 +87,7 @@ def catch_all(path):
     
 
 if __name__ == '__main__':
+    subprocess.call(['python', 'update_img.py'])
+    subprocess.call(['python', 'play.py'])
     app.run(host='0.0.0.0', debug=True)
+

@@ -49,6 +49,9 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         print 'Quit'
-        os.system('sudo bash -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"')
         GPIO.cleanup()
+
+    finally:
+        os.system('sudo bash -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"')
+       
 
