@@ -15,3 +15,4 @@ Yuu must install the fbi application.
 
 If you don't have a picamera module, you cannot capture a pic & upload it.
 
+If you don't a PIR module, you cannot use sleep mode.
