@@ -8,7 +8,7 @@ You must modify CONST_TOKEN value for your dropbox application.
 """
 
 #Dropbox OAuth2 access token
-CONST_TOKEN = 'XXXXXXXXXXX'
+CONST_TOKEN = 'XXXXXXXXXXXXXXX'
 
 #The directory name for saved images. 
 CONST_IMG_DIR_NAME = 'images'
@@ -37,20 +37,9 @@ CONST_CAMCORDER_FRAMERATE = 30
 #Recording time of camcorder
 CONST_CAMCORDER_RECORDING_TIME = 10
 
-#RabbitMQ Server URL
-CONST_RABBITMQ_SERVER_URL = 'jasmine125.asuscomm.com'
-
-#RabbitMQ virtual host
-CONST_RABBITMQ_VIRTUAL_HOST = 'push'
-
-#RabbitMQ Guest ID
-CONST_RABBITMQ_ID = 'pirabbitmq'
-
-#RabbitMQ Guest password
-CONST_RABBITMQ_PWD = 'Ehdgns2*p'
-
-#RabbitMQ queue name
-CONST_RABBITMQ_QUEUE = 'hello'
+#Backlight turn on time
+CONST_BACKLIGHT_TURN_ON_TIME = 60
+CONST_BACKLIGHT_TURN_OFF_TIME = 0.5
 
 #define Command
 CONST_CMD = 'cmd'
